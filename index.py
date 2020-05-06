@@ -3,7 +3,7 @@ import datetime, sched, time
 from gpiozero import LED
 led = LED(17)
 p = Piazza()
-p.user_login("cummin26@purdue.edu","Lavalamp#02")
+p.user_login("email","password")
 user_profile = p.get_user_profile()
 cs180 = p.network('j6dkyqj34gm3rw')
 s = sched.scheduler(time.time, time.sleep)
